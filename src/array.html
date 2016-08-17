@@ -28,7 +28,7 @@
             ng-click="appendToArray()"
             ng-disabled="form.schema.maxItems <= modelArray.length"
             type="button"
-            class="btn md-raised md-primary {{ form.style.add || 'btn-default' }} pull-right">
+            class="{{ form.style.add }} pull-right">
       <i class="glyphicon glyphicon-plus"></i>
       {{ form.add || 'Add'}}
     </md-button>

@@ -6,11 +6,10 @@
   <section layout="row" layout-sm="column" layout-align="center center">
     <md-input-container ng-repeat="item in form.titleMap">
       <md-button type="button"
-                 class="group md-raised"
+                 class="group radio {{form.fieldHtmlClass}}"
                  sf-field-model="replaceAll"
                  ng-model="$$value$$"
                  sf-changed="form"
-                 class="radio {{form.fieldHtmlClass}}"
                  ng-class="{'md-primary': ($$value$$ == item.value)}"
                  ng-disabled="form.readonly"
                  ng-model-options="form.ngModelOptions"
