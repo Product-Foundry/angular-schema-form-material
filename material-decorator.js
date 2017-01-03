@@ -122,7 +122,7 @@ angular.module('schemaForm').directive('sfMaterialClass', function($compile, $ti
     };
 
     function sfMessagesNodeHandler() {
-        var html = '<div ng-if="ngModel.$invalid" ng-messages="{dummy: true}" class="ng-active">' +
+        var html = '<div ng-show="ngModel.$invalid" ng-messages="{dummy: true}" class="ng-active">' +
           '<div ng-message="dummy" class="md-input-message-animation" sf-message="form.description"></div></div>';
       var div = document.createElement('div');
       div.innerHTML = html;
